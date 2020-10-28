@@ -316,7 +316,9 @@ body {
     }
 
     .text {
-        width: 80vw;
+        width: 90vw;
+        font-size: 24px;
+        font-weight: 600;
     }
 
     .grid {
@@ -328,6 +330,8 @@ body {
 
     .nav {
         position: absolute;
+        font-size: 22px;
+        font-weight: 600;
     }
 
     .menu {
@@ -342,6 +346,7 @@ body {
 
     .box {
         padding: 10px 0;
+        font-size: 30px;
     }
 
     .nav .menu li {
