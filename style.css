@@ -90,7 +90,7 @@ body {
 .title::before {
     content: "";
     display: inline-block;
-    width: 40vw;
+    width: 30vw;
     height: 5px;
     background: -webkit-linear-gradient(right, rgb(32, 32, 32) 0%, transparent 100%);
     vertical-align: middle;
@@ -98,7 +98,7 @@ body {
 .title::after {
     content: "";
     display: inline-block;
-    width: 40vw;
+    width: 30vw;
     height: 5px;
     background: -webkit-linear-gradient(left, rgb(32, 32, 32) 0%, transparent 100%);
     vertical-align: middle;
@@ -303,4 +303,50 @@ body {
 
 .box3 {
     background-color: #ffc600;
+}
+
+@media all and (max-width: 1000px) {
+
+    .title::before {
+        display: none;
+    }
+
+    .title::after {
+        display: none;
+    }
+
+    .text {
+        width: 80vw;
+    }
+
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(20, 50vw);
+        grid-gap: 50px;
+        height: auto;
+    }
+
+    .nav {
+        position: absolute;
+    }
+
+    .menu {
+        display: flex;
+        flex: 1 1 100%;
+        justify-content: space-around;
+    }
+
+    .contact {
+        flex-direction: column;
+    }
+
+    .box {
+        padding: 10px 0;
+    }
+
+    .nav .menu li {
+        padding: 8px 0;
+    }
+
+
 }
