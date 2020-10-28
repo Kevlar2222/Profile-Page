@@ -14,6 +14,9 @@ function getRandomTime () {
 }
 
 function navCSS () {
+    if(window.innerWidth < 1000){
+        return;
+    }
     if(window.scrollY === 0){
         nav.style.backgroundColor = "rgb(52, 52, 200)";
         nav.style.transform = "scale(1)";
